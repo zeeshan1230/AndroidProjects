@@ -10,11 +10,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 
 public class MainActivity extends ActionBarActivity {
-
-    Random r = new Random();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +56,7 @@ public class MainActivity extends ActionBarActivity {
         int firstStar = starList.get(0);
         int secondStar = starList.get(1);
 
-
+        //convert int to strings.
         String number1 = String.valueOf(num1);
         String number2 = String.valueOf(num2);
         String number3 = String.valueOf(num3);
@@ -69,7 +66,7 @@ public class MainActivity extends ActionBarActivity {
         String starOne = String.valueOf(firstStar);
         String starTwo = String.valueOf(secondStar);
 
-
+       //Concatenate strings
        rndNumber.setText(number1 + "," + number2 + "," + number3 + "," + number4 + "," + number5
                + " " + starOne + "," + starTwo);
 
